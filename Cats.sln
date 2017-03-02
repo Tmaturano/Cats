@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats", "Cats\Cats\Cats.csproj", "{858D4DB6-6F31-4AB0-9F55-29297811D04D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats", "Cats\Cats.csproj", "{858D4DB6-6F31-4AB0-9F55-29297811D04D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.Droid", "Cats\Cats.Droid\Cats.Droid.csproj", "{432BF2E0-F5C3-49F7-B124-A491BFCF152A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.Droid", "Cats.Droid\Cats.Droid.csproj", "{432BF2E0-F5C3-49F7-B124-A491BFCF152A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.iOS", "Cats\Cats.iOS\Cats.iOS.csproj", "{FD313C1E-1D08-41DD-A1D1-0471F6A28758}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.iOS", "Cats.iOS\Cats.iOS.csproj", "{FD313C1E-1D08-41DD-A1D1-0471F6A28758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.UWP", "Cats\Cats.UWP\Cats.UWP.csproj", "{04CE7030-207B-46E9-85A9-10028593E661}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cats.UWP", "Cats.UWP\Cats.UWP.csproj", "{04CE7030-207B-46E9-85A9-10028593E661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
