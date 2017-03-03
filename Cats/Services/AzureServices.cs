@@ -1,24 +1,24 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-
+using Microsoft.WindowsAzure.MobileServices;
 namespace Cats.Services
 {
     public class AzureServices<T>
     {
-        IMobileServiceClient Client;
+        
+        private readonly IMobileServiceClient _client;
 
         /// <summary>
         /// This represents a table on the backend
         /// </summary>
-        IMobileServiceTable<T> Table;
+        private readonly IMobileServiceTable<T> _table;
 
 
         public AzureServices()
         {
             string theCatsAppServiceURL = "http://thecatsapp.azurewebsites.net";
-            Client = new MobileServiceClient(theCatsAppServiceURL);
-            Table = Client.GetTable<T>();
+            _client = new MobileServiceClient(theCatsAppServiceURL);
+            _table = _client.GetTable<T>();
         }
 
         /// <summary>
@@ -27,8 +27,7 @@ namespace Cats.Services
         /// <returns></returns>
         public Task<IEnumerable<T>> GetTable()
         {
-            return Table.ToEnumerableAsync();
+            return _table.ToEnumerableAsync();
         }
-
     }
 }
